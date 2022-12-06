@@ -1,5 +1,5 @@
 # Praktikum Pemrograman Mobile B
-# Maria Ulfa Chasanah (H1D020035)
+# Susi Setianingsih (H1D020044)
 
 
 # About This Project!
