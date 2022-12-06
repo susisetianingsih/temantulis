@@ -1,4 +1,4 @@
-# Praktikum Pemrograman Mobile B
+# Praktikum Pemrograman Mobile Shift E
 # Susi Setianingsih (H1D020044)
 
 
