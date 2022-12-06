@@ -47,32 +47,6 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'bookmark',
-    loadChildren: () =>
-      import('./bookmark/bookmark.module').then((m) => m.BookmarkPageModule),
-  },
-  {
-    path: 'bookmark-edit/:id',
-    loadChildren: () =>
-      import('./bookmark-edit/bookmark-edit.module').then(
-        (m) => m.BookmarkEditPageModule
-      ),
-  },
-  {
-    path: 'bookmark-lihat/:id',
-    loadChildren: () =>
-      import('./bookmark-lihat/bookmark-lihat.module').then(
-        (m) => m.BookmarkLihatPageModule
-      ),
-  },
-  {
-    path: 'bookmark-tambah',
-    loadChildren: () =>
-      import('./bookmark-tambah/bookmark-tambah.module').then(
-        (m) => m.BookmarkTambahPageModule
-      ),
-  },
-  {
     path: 'note',
     loadChildren: () =>
       import('./note/note.module').then((m) => m.NotePageModule),
@@ -97,40 +71,9 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'task',
-    loadChildren: () =>
-      import('./task/task.module').then((m) => m.TaskPageModule),
-  },
-  {
-    path: 'task-edit/:id',
-    loadChildren: () =>
-      import('./task-edit/task-edit.module').then((m) => m.TaskEditPageModule),
-  },
-  {
-    path: 'task-lihat/:id',
-    loadChildren: () =>
-      import('./task-lihat/task-lihat.module').then(
-        (m) => m.TaskLihatPageModule
-      ),
-  },
-  {
-    path: 'task-tambah',
-    loadChildren: () =>
-      import('./task-tambah/task-tambah.module').then(
-        (m) => m.TaskTambahPageModule
-      ),
-  },
-  {
     path: 'daftar',
-    loadChildren: () => import('./daftar/daftar.module').then( m => m.DaftarPageModule)
-  },
-  {
-    path: 'task-lihat-log',
-    loadChildren: () => import('./task-lihat-log/task-lihat-log.module').then( m => m.TaskLihatLogPageModule)
-  },
-  {
-    path: 'task-lihat-semua',
-    loadChildren: () => import('./task-lihat-semua/task-lihat-semua.module').then( m => m.TaskLihatSemuaPageModule)
+    loadChildren: () =>
+      import('./daftar/daftar.module').then((m) => m.DaftarPageModule),
   },
 ];
 @NgModule({

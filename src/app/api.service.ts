@@ -9,7 +9,7 @@ export class ApiService {
 
   //link API
   apiURL() {
-    return 'http://localhost/backenda';
+    return 'http://localhost/backtemantulis';
   }
 
   getDataDiary() {
@@ -24,18 +24,6 @@ export class ApiService {
     return this.http.get(this.apiURL() + '/lihat_diary.php?id=' + id);
   }
 
-  getDataBookmark() {
-    return this.http.get(this.apiURL() + '/tampil_bookmark.php');
-  }
-
-  deleteDataBookmark(id: any) {
-    return this.http.delete(this.apiURL() + '/hapus_bookmark.php?id=' + id);
-  }
-
-  ambilDataBookmark(id: any) {
-    return this.http.get(this.apiURL() + '/lihat_bookmark.php?id=' + id);
-  }
-
   getDataNote() {
     return this.http.get(this.apiURL() + '/tampil_note.php');
   }
@@ -46,25 +34,5 @@ export class ApiService {
 
   ambilDataNote(id: any) {
     return this.http.get(this.apiURL() + '/lihat_note.php?id=' + id);
-  }
-
-  getDataTask() {
-    return this.http.get(this.apiURL() + '/tampil_task.php');
-  }
-
-  deleteDataTask(id: any) {
-    return this.http.delete(this.apiURL() + '/hapus_task.php?id=' + id);
-  }
-
-  ambilDataTask(id: any) {
-    return this.http.get(this.apiURL() + '/lihat_task.php?id=' + id);
-  }
-
-  getDataSemuaTask() {
-    return this.http.get(this.apiURL() + '/tampilsemua_task.php');
-  }
-
-  ambilDataTaskLog() {
-    return this.http.get(this.apiURL() + '/tampil_task_log.php');
   }
 }

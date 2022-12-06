@@ -12,42 +12,58 @@ ion-content {
 
     .header {
       --padding-top: 20px;
-      --background: #ffffff;
+      --padding-bottom: 200px;
+      --background: url("/assets/image/home-header.jpg") no-repeat center center /
+        cover;
+      --border-radius: 0px 0px 20px 20px;
 
       ion-icon {
-        color: black;
+        color: white;
       }
 
       ion-img {
-        height: 70px;
+        height: 40px;
+      }
+
+      .halo {
+        --background: none;
+        position: absolute;
+        top: 80px;
+        ion-item {
+          ion-label {
+            strong {
+              --text-shadow: 2px 2px 5px #000000;
+              font-size: 30pt;
+            }
+
+            strong.user {
+              color: #0fc5ce;
+            }
+
+            p {
+              padding-top: 5px;
+              font-size: 12pt;
+              color: black;
+            }
+          }
+        }
       }
     }
 
-    .hallo {
-      ion-item {
-        padding: 15px 15px;
-        margin-bottom: 10px;
-        --min-height: 120px;
-        --background: linear-gradient(
-            0deg,
-            rgba(255, 255, 255, 0.1),
-            rgba(255, 255, 255, 0.1)
-          ),
-          url("/assets/image/home-header.jpg") no-repeat center center / cover;
-        --border-radius: 15px;
-        font-weight: 700;
-        font-size: 30px;
+    .desc {
+      --padding-top: 10px;
+      --background: none;
+
+      ion-label {
         strong {
-          text-shadow: 2px 2px 5px #000000;
+          --text-shadow: 2px 2px 5px #000000;
+          font-size: 18pt;
+          color: black;
         }
-
-        strong.user {
-          color: #f6b21b;
-        }
-
         p {
-          padding-top: 5px;
-          font-size: 10pt;
+          margin-top: 5px;
+          margin-bottom: 10px;
+          font-size: 12pt;
           color: black;
         }
       }
@@ -55,25 +71,32 @@ ion-content {
 
     .menu {
       ion-item {
-        margin: 15px 15px;
+        margin: 20px 15px;
         --min-height: 100px;
-        --background: linear-gradient(
-          96.16deg,
-          rgba(255, 232, 210, 0.5) 0.97%,
-          rgba(107, 58, 13, 0.5) 98.97%
-        );
+        --background: rgba(15, 197, 206, 0.3);
+        // --background: linear-gradient(
+        //   96.16deg,
+        //   rgba(15, 197, 206, 0.5) 0.97%,
+        //   rgba(37, 13, 107, 0.5) 98.97%
+        // );
         box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(5px);
         /* Note: backdrop-filter has minimal browser support */
 
-        border-radius: 15px;
+        border-radius: 10px;
+
+        ion-thumbnail {
+          img {
+            border-radius: 10px;
+          }
+        }
 
         h1 {
-          color: #4e2f00;
+          color: #0754b8;
         }
 
         p {
-          color: #ffffff;
+          color: black;
         }
       }
     }
