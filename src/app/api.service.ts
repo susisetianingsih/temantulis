@@ -9,7 +9,7 @@ export class ApiService {
 
   //link API
   apiURL() {
-    return 'http://localhost/backtemantulis';
+    return 'http://localhost:8080/backtemantulis';
   }
 
   getDataDiary() {

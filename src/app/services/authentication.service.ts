@@ -31,7 +31,7 @@ export class AuthenticationService {
       });
   }
   apiURL() {
-    return 'http://localhost/backtemantulis/';
+    return 'http://localhost:8080/backtemantulis/';
   }
   logout() {
     this.clearData();
